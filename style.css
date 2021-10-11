@@ -14,6 +14,15 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+nav img {
+  width: 308px;
+  height: 53px;
+  object-fit: cover;
+}
+nav .centrer p {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 .fa-map-marker {
   color: black;
@@ -26,14 +35,14 @@ nav {
 }
 
 .centrer {
-  background-color: lightgray;
+  background-color: #EAEAEA;
   width: 600px;
   border-top: 2px solid black;
   text-align: center;
 }
 
 .navig {
-  background-color: rgba(245, 238, 238, 0.966);
+  background-color: #F6F6F6;
   width: 600px;
   text-align: center;
 }
@@ -41,10 +50,23 @@ nav {
 .recherche2 {
   height: 44px;
   font-size: 16px;
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border-radius: 10px;
   font-weight: bold;
+}
+
+.sstitre1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.sstitre1 {
+  font-size: 20px;
+}
+
+.vide {
+  height: 50px;
 }
 
 .section1 {
@@ -54,9 +76,11 @@ nav {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 33px;
   font-weight: 900;
+  text-align: start;
+  margin-left: 36px;
 }
 
 .filtre1 {
@@ -64,17 +88,18 @@ h3 {
   height: 40px;
   width: 500px;
   position: relative;
-  border: 1px solid lightgray;
-  border-radius: 0 50px 50px 0;
-  background-color: lightgray;
+  border: 1px solid #F5EDFF;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #F5EDFF;
+  box-shadow: 6px 6px 10px #F6F6F6;
 }
 
 .filtre1 div {
   position: absolute;
-  width: 43px;
-  height: 43px;
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   text-align: center;
 }
 
@@ -84,20 +109,19 @@ h3 {
   font-weight: bold;
   font-size: 16px;
   padding-left: 13px;
-  background-color: lightgray;
 }
 
 .top {
-  top: -1px;
+  top: 11px;
 }
 
 .left {
-  left: -21px;
+  left: -8px;
 }
 
 .nbricon {
   color: white;
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .filtre2 {
@@ -105,17 +129,18 @@ h3 {
   height: 40px;
   width: 500px;
   position: relative;
-  border: 1px solid lightgray;
-  border-radius: 0 50px 50px 0;
-  background-color: lightgray;
+  border: 1px solid #F5EDFF;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #F5EDFF;
+  box-shadow: 6px 6px 10px #F6F6F6;
 }
 
 .filtre2 div {
   position: absolute;
-  width: 43px;
-  height: 43px;
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   text-align: center;
 }
 
@@ -132,17 +157,18 @@ h3 {
   height: 40px;
   width: 500px;
   position: relative;
-  border: 1px solid lightgray;
-  border-radius: 0 50px 50px 0;
-  background-color: lightgray;
+  border: 1px solid #F5EDFF;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #F5EDFF;
+  box-shadow: 6px 6px 10px #F6F6F6;
 }
 
 .filtre3 div {
   position: absolute;
-  width: 43px;
-  height: 43px;
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   text-align: center;
 }
 
@@ -154,43 +180,29 @@ h3 {
   padding-left: 13px;
 }
 
-.filtre4 {
-  margin: 5px auto;
-  height: 40px;
-  width: 500px;
-  position: relative;
-  border: 1px solid lightgray;
-  border-radius: 0 50px 50px 0;
-  background-color: lightgray;
-}
-
-.filtre4 div {
-  position: absolute;
-  width: 43px;
-  height: 43px;
-  border-radius: 100%;
-  background-color: #FF79DA;
-  text-align: center;
-}
-
-.filtre4 a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  padding-left: 13px;
-}
-
 .textfiltre {
   padding-left: 27px;
   margin-top: -7px;
+  padding-right: 110px;
+}
+
+.fa-mobile-alt, .fa-list-ul {
+  color: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+  padding-right: 80px;
 }
 
 .section2 {
   width: 600px;
   margin: 0 auto;
   text-align: center;
-  background-color: #fcf8f8;
+  background-color: #F6F6F6;
 }
 
 .activ {
@@ -198,7 +210,7 @@ h3 {
   border-radius: 15px;
   box-shadow: 6px 6px 10px lightgray;
   height: 200px;
-  width: 30%;
+  width: 94%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -221,6 +233,7 @@ h3 {
 .textphoto {
   height: 40%;
   padding-left: 6%;
+  text-align: start;
 }
 
 .fig1 {
@@ -251,10 +264,10 @@ h2 {
 footer {
   width: 600px;
   margin: 0 auto;
-  text-align: center;
-  background-color: lightslategrey;
+  text-align: start;
+  background-color: #353535;
+  color: white;
 }
-
 footer ul {
   list-style: none;
 }
