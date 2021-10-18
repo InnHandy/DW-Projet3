@@ -65,6 +65,9 @@ nav{display: flex;flex-direction: column;align-items: center;
                 .photo{
                 height: 60%;
                 }
+                .nouveau p{color: #008000;}
+                .nouveau{position:relative;background: lightgreen;width: 150px; height: 120px;}
+                .top2{top:10px; left: 10px;}
                 .photo p {
                     margin: 0 1px;
                     text-align: center;
