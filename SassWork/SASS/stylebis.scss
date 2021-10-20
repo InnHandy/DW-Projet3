@@ -8,6 +8,10 @@ $blanc: white;
 $color-fonct: #F5EDFF;
 $color-shadow: #F6F6F6;
 
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
 
 /*Propriétés de la page*/
 body{font-family: "Roboto",
@@ -39,15 +43,21 @@ main div div img{width: 496px; height: 337px;}
 .section1{width:487px; margin: 0 auto;text-align: center; margin: 0 auto;}
 .activ{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         background-color: $blanc;
         border-radius: 15px;
         box-shadow: 6px 6px 10px lightgray;
         height: 90px;
         width: 94%;
         margin: 20px auto;
-        /* display: flex;
-        flex-direction: column;*/
+        overflow: hidden;
+        cursor: pointer;
+        &:hover{
+            .textphoto{width: 100%;}
+            .check {
+                .fa-check-circle {animation-name: spin;animation-duration: 200ms;animation-delay:800ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
+            }
+        }
     }
     .photo{
     height: 60%;
@@ -65,29 +75,24 @@ main div div img{width: 496px; height: 337px;}
         height: 40%;
         padding-left: 6%;
         text-align: start;
-        width: 100%;
-    }
+        width:10000%;
+        transition-property: width ;transition-duration: 1s;
+    
+        }
+    
     
     .check{ background-color: green; text-align: center;color: $blanc;vertical-align: middle;width:20%;
-            animation-name: choix; animation-duration: 4ms;
+            ; overflow: hidden;
+            
     }
-    .fa-check-circle{margin-top: 22%;
-        font-size: 36px;transform: rotate(0deg);animation-name: spin; animation-duration: 4ms;}
     
-    /*@keyframes choix{
-        from{width: 0%;}
-        25% {width: 10%;}
-        50%{width: 15%;}
-        75%{width: 20%;}
-        to {width: 30%}
-    }*/
-    /*@keyframes spin{
-        from{transform: rotate(0deg);}
-        25% {transform: rotate(90deg);}
-        50%{transform: rotate(180deg);}
-        75%{transform: rotate(270deg);}
-        to {transform: rotate(360deg);}
-    }*/
+    .fa-check-circle{margin-top: 1rem;
+        font-size: 36px;
+        }
+        
+    
+    .icone{border: 6px solid black;}
+
         
 
     h2{

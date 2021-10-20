@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /*Variables*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*Propriétés de la page*/
 body {
   font-family: "Roboto", sans-serif;
@@ -98,15 +106,27 @@ main div div img {
 
 .activ {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 6px 10px lightgray;
   height: 90px;
   width: 94%;
   margin: 20px auto;
-  /* display: flex;
-  flex-direction: column;*/
+  overflow: hidden;
+  cursor: pointer;
+}
+.activ:hover .textphoto {
+  width: 100%;
+}
+.activ:hover .check .fa-check-circle {
+  animation-name: spin;
+  animation-duration: 200ms;
+  animation-delay: 800ms;
+  animation-timing-function: ease-in;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 
 .photo {
@@ -127,7 +147,9 @@ main div div img {
   height: 40%;
   padding-left: 6%;
   text-align: start;
-  width: 100%;
+  width: 10000%;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .check {
@@ -136,32 +158,18 @@ main div div img {
   color: white;
   vertical-align: middle;
   width: 20%;
-  animation-name: choix;
-  animation-duration: 4ms;
+  overflow: hidden;
 }
 
 .fa-check-circle {
-  margin-top: 22%;
+  margin-top: 1rem;
   font-size: 36px;
-  transform: rotate(0deg);
-  animation-name: spin;
-  animation-duration: 4ms;
 }
 
-/*@keyframes choix{
-    from{width: 0%;}
-    25% {width: 10%;}
-    50%{width: 15%;}
-    75%{width: 20%;}
-    to {width: 30%}
-}*/
-/*@keyframes spin{
-    from{transform: rotate(0deg);}
-    25% {transform: rotate(90deg);}
-    50%{transform: rotate(180deg);}
-    75%{transform: rotate(270deg);}
-    to {transform: rotate(360deg);}
-}*/
+.icone {
+  border: 6px solid black;
+}
+
 h2 {
   font-size: 16px;
   margin: 13px 0px 5px 0px;
