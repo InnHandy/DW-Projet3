@@ -12,175 +12,178 @@
         <title>Oh My Food</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <div class="loader"></div>
+    
     <body>
+       <div class="load"><div class="loader"></div></div>
+
+        <div class="after-load">
         <!--Entête du corps-->
-        <header>
-            <!--Menu de navigation du site internet-->
-            <nav>
-                <div class="imag">
-                    <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
-                </div>
-                <div class="centrer">
-                    <p>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        Paris,Belleville
-                    </p>
-                </div>
-                <div class="navig">
-                    <div>
-                        <p class="sstitre1">
-                            Réservez le menu qui vous convient</p></div>
-                    <div>
-                        <p class="sstitre2">
-                            Découvrez des restaurants d'exception, sélectionnés par nos soins
+            <header>
+                <!--Menu de navigation du site internet-->
+                <nav>
+                    <div class="logo">
+                        <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
+                    </div>
+                    <div class="localisation">
+                        <p>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Paris,Belleville
                         </p>
                     </div>
-                    <div>
-                        <input type="button" value="Explorez nos restaurants" class="recherche2">
-                    </div>
-                    <div class="vide">
-                        <p >
+                    <div class="reserver">
+                        <div>
+                            <p class="soustitre1">
+                                Réservez le menu qui vous convient</p></div>
+                        <div>
+                            <p class="soustitre2">
+                                Découvrez des restaurants d'exception, sélectionnés par nos soins
+                            </p>
+                        </div>
+                        <div>
+                            <input type="button" value="Explorez nos restaurants" class="btn">
+                        </div>
+                        <div class="vide">
+                            <p >
 
-                        </p>
+                            </p>
+                        </div>
+                    </div>     
+                </nav>
+            </header>
+                <section class="section1">
+                    <div>
+                        <h3>Fonctionnement</h3>
                     </div>
-                </div>     
-            </nav>
-        </header>
-            <section class="section1">
+                        <div class="fonctionnement">
+                            <a href="#">
+                                <div class="top left">
+                                    <p class="nbricon">
+                                        1
+                                    </p>
+                                </div>
+                                <p class="text-fonct">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Choisissez un restaurant</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fonctionnement">
+                            <a href="#">
+                                <div class="top left">
+                                    <p class="nbricon">
+                                        2
+                                    </p>
+                                </div>
+                                <p class="text-fonct">
+                                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                                    <span>Composez votre menu</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fonctionnement">
+                            <a href="#">
+                                <div class="top left">
+                                    <p class="nbricon">
+                                        3
+                                    </p>
+                                </div>
+                                <p class="text-fonct">
+                                    <i class="fas fa-store"></i>
+                                    <span>Dégustez au restaurant</span>
+                                </p>
+                            </a>
+                        </div>
+                    
+            </section>
+            <section class="section2">
                 <div>
-                    <h3>Fonctionnement</h3>
-                </div>
-                    <div class="filtre1">
-                        <a href="#">
-                            <div class="top left">
-                                <p class="nbricon">
-                                    1
-                                </p>
+                    <h1>Restaurants</h1>
+                    <div>
+                        <div class="restaurant">
+                            <div class="photo">
+                                <a href="lapalettedugout.html" class=""><p>
+                                    <img src="./images/restaurants/jay-wennington-1080.jpg"   alt="La Palette du Gout"  class="figure"/>
+                                </p></a>
+                                <div class="nouveau top2"><p>Nouveau</p></div>
                             </div>
-                            <p class="textfiltre">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Choisissez un restaurant</span>
-                            </p>
-                        </a>
-                    </div>
-                    <div class="filtre2">
-                        <a href="#">
-                            <div class="top left">
-                                <p class="nbricon">
-                                    2
-                                </p>
+                            
+                            <div class="textphoto">
+                                <a href="lapalettedugout.html" class="nonsurligne"><h2>La Palette du Gout</h2>
+                                <p class="griser1">
+                                    MenilMontant 
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>                        </div>
+                            
+                        </div>
+                        
+                        <div class="restaurant">
+                            <div class="photo">
+                                <a href="lapalettedugout.html" class=""><p>
+                                    <img src="images/restaurants/louis-hansel-1080.jpg"   alt="La Note enchantée"  class="figure"/>
+                                </p></a>
+                                <div class="nouveau top2"><p>Nouveau</p></div>
                             </div>
-                            <p class="textfiltre">
-                                <i class="fa fa-list-ul" aria-hidden="true"></i>
-                                <span>Composez votre menu</span>
-                            </p>
-                        </a>
-                    </div>
-                    <div class="filtre3">
-                        <a href="#">
-                            <div class="top left">
-                                <p class="nbricon">
-                                    3
-                                </p>
+                            
+                            <div class="textphoto">
+                                <a href="lanoteenchantee.html" class="nonsurligne"><h2>La Note enchantée</h2>
+                                <p class="griser1">Charonne 
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                                </p></a>
                             </div>
-                            <p class="textfiltre">
-                                <i class="fas fa-store"></i>
-                                <span>Dégustez au restaurant</span>
-                            </p>
-                        </a>
-                    </div>
-                
-        </section>
-        <section class="section2">
-            <div class="bloc1">
-                <h1 id="Restaurant">Restaurants</h1>
-                <!-- Ne pas oublier de faire des liens d'images sur lesquelles on peut cliquer vers des images plus grandes ahref=img grde img petite a-->
-                <div class="sousbloc1">
-                    
-                    <div class="activ">
-                        <div class="photo">
-                            <a href="lapalettedugout.html" class=""><p>
-                                <img src="./images/restaurants/jay-wennington-1080.jpg"   alt="La Palette du Gout"  class="fig1"/>
-                            </p></a>
-                            <div class="nouveau top2"><p>Nouveau</p></div>
+                            
                         </div>
-                        
-                        <div class="textphoto">
-                            <a href="lapalettedugout.html" class="nonsurligne"><h2>La Palette du Gout</h2>
-                            <p class="griser1">
-                                MenilMontant 
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </p></a>
+                        <div class="restaurant">
+                            <div class="photo">
+                                <a href="lapalettedugout.html" class=""><p>
+                                    <img src="images/restaurants/stil-1080.jpg"   alt="A la Française"  class="figure"/>
+                                </p></a></div>
+                            <div class="textphoto">
+                                <a href="alafrancaise.html" class="nonsurligne"><h2>A la Française</h2>
+                                <p class="griser1">
+                                    Cité Rouge 
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>                            
+                                </p></a>
+                            </div>
                         </div>
-                        
-                    </div>
-                    
-                    <div class="activ">
-                        <div class="photo">
-                            <a href="lapalettedugout.html" class=""><p>
-                                <img src="images/restaurants/louis-hansel-1080.jpg"   alt="La Note enchantée"  class="fig1"/>
-                            </p></a>
-                            <div class="nouveau top2"><p>Nouveau</p></div>
-                        </div>
-                        
-                        <div class="textphoto">
-                            <a href="lanoteenchantee.html" class="nonsurligne"><h2>La Note enchantée</h2>
-                            <p class="griser1">Charonne <i class="fa fa-heart-o" aria-hidden="true"></i></p></a>
-                        </div>
-                        
-                    </div>
-                    <div class="activ">
-                        <div class="photo">
-                            <a href="lapalettedugout.html" class=""><p>
-                                <img src="images/restaurants/stil-1080.jpg"   alt="A la Française"  class="fig1"/>
-                            </p></a></div>
-                        <div class="textphoto">
-                            <a href="alafrancaise.html" class="nonsurligne"><h2>A la Française</h2>
-                            <p class="griser1">
-                                Cité Rouge 
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </p></a>
-                        </div>
-                    </div>
-                    <div class="activ">
-                        <div class="photo">
-                            <a href="lapalettedugout.html" class=""><p>
-                                <img src="images/restaurants/toa-1080.jpg"   alt="Le délice des sens"  class="fig1"/>
-                            </p></a>
-                        </div>
-                        <div class="textphoto">
-                            <a href="ledelicedessens.html" class="nonsurligne"><h2>Le délice des sens</h2>
-                            <p class="griser1">
-                                Flory-Mericourt 
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </p></a>
+                        <div class="restaurant">
+                            <div class="photo">
+                                <a href="lapalettedugout.html" class=""><p>
+                                    <img src="images/restaurants/toa-1080.jpg"   alt="Le délice des sens"  class="figure"/>
+                                </p></a>
+                            </div>
+                            <div class="textphoto">
+                                <a href="ledelicedessens.html" class="nonsurligne"><h2>Le délice des sens</h2>
+                                <p class="griser1">
+                                    Flory-Mericourt 
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                                </p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-        </section>
+                    
+            </section>
 
-        <footer>
-            <ul class="element1">
-                <li class="ssfooter">
-                    Ohmyfood
-                </li>
-                <li class="griser">
-                    <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    Proposer un restaurant
-                </li>
-                <li class="griser">
-                    <i class="fas fa-hands-helping"></i>
-                    Devenir Partenaire
-                </li>
-                <li class="griser">
-                    Mentions légales
-                </li>
-                <li class="griser">
-                    Contact
-                </li>
-            </ul>
-        </footer>
+            <footer>
+                <ul class="element1">
+                    <li class="ssfooter">
+                        Ohmyfood
+                    </li>
+                    <li class="griser">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </li>
+                    <li class="griser">
+                        <i class="fas fa-hands-helping"></i>
+                        Devenir Partenaire
+                    </li>
+                    <li class="griser">
+                        Mentions légales
+                    </li>
+                    <li class="griser">
+                        Contact
+                    </li>
+                </ul>
+            </footer>
+    </div>
     </body>
 </html>
