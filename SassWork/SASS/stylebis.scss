@@ -114,10 +114,13 @@ main div div img{width: 400px; height: 337px;}
         text-align: start;
         width:10000%;
         transition-property: width ;transition-duration: 1s;
-    
+        display: flex;
         }
     
-    
+        .texte{width: 90%; text-overflow: ellipsis;}
+
+        .coeur{padding-top: 30px; width: 10%;}
+
     .check{ background-color: green; text-align: center;color: $blanc;vertical-align: middle;width:20%;
             ; overflow: hidden;
             

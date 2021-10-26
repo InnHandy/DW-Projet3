@@ -235,18 +235,29 @@ h1 {
   object-fit: cover;
 }
 
-svg {
-  stroke: black;
-  stroke-width: 30px;
-  width: 245px;
-  height: 20px;
-  color: transparent;
-  cursor: pointer;
-  position: absolute;
-  left: 230px;
+.fa-heart {
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
 }
-svg:hover {
-  fill: #FF79DA;
+
+.lock {
+  text-decoration: none;
+}
+
+.lock:hover .fa-heart-o,
+.lock .fa-heart {
+  display: none;
+}
+
+.lock:hover .fa-heart {
+  display: inline;
+}
+
+.fa-heart-o {
+  color: black;
 }
 
 .nonsurligne {
@@ -259,7 +270,7 @@ svg:hover {
   background: lightgreen;
   width: 77px;
   height: 32px;
-  margin-left: 28rem;
+  margin-left: 270px;
 }
 .nouveau p {
   color: #008000;
@@ -274,6 +285,16 @@ svg:hover {
   height: 40%;
   padding-left: 6%;
   text-align: start;
+  display: flex;
+}
+
+.texte {
+  width: 90%;
+  text-overflow: ellipsis;
+}
+
+.coeur {
+  padding-top: 30px;
 }
 
 h2 {

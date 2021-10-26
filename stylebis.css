@@ -169,6 +169,17 @@ main div div img {
   width: 10000%;
   transition-property: width;
   transition-duration: 1s;
+  display: flex;
+}
+
+.texte {
+  width: 90%;
+  text-overflow: ellipsis;
+}
+
+.coeur {
+  padding-top: 30px;
+  width: 10%;
 }
 
 .check {
