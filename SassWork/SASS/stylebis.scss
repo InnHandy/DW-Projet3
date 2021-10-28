@@ -7,61 +7,81 @@ $degrade: linear-gradient($couleur-sec,$couleur-prim);
 $blanc: white;
 $color-fonct: #F5EDFF;
 $color-shadow: #F6F6F6;
+$policelettre0: 24px;
+$policelettre1: 28px;
+$policelettre2: 40px;
+$taillebody: 80%;
+
 /*animations keyframes*/
 @keyframes appear {
     from {
-      opacity: 1;
+        opacity:1;
     }
     to {
-      opacity: 0;
+        opacity:0;
     }
-  }
-  @keyframes disappear {
+}
+
+@keyframes disappear {
     from {
-      opacity: 0;
+        opacity:0;
     }
-    70% {
-      opacity: 0;
-    }
+    70%{ opacity:0;}
     to {
-      opacity: 1;
+        opacity:1;
+    }
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
     }
   }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  /*Propriétés de la page avec chargement de la page*/
-  body {
+
+/*Propriétés de la page avec chargement de la page*/
+body{
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
     padding: 9px;
-    max-width: 600px;
+    max-width: 1024px;
   }
-
 
 /*Header*/
 nav{
-    position: relative;
+  position: relative;
+  width: $taillebody;
+  margin: 0 auto;
     img{
-        width: 300px; 
         text-align: center; 
-        margin: 0 auto;}
+        width: 53%; 
+        height: 70px;
+        object-fit: cover;}
 }
-.imag1{width: 400px; text-align: center;}
+.imag1{width: 100%; text-align: center;}
 .fa-arrow-left{font-size: 35px;}
 
-.menu{display: flex;align-items: center;}
+.entete{display: flex;align-items: center;}
 
-.imag2{width: 400px; text-align: center;}
-main{display:flex;flex-direction: column;}
-main div div img{width: 400px; height: 337px;}
-.corps {position: absolute;
-    width: 400px;
+.screenshot{width: 100%;}
+
+
+main{display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;}
+
+main div div img{width: 100%;
+  height: 337px;
+  object-fit: cover;}
+.imag2{width: 100%; text-align: center;}
+
+
+.corps {position: relative;
+    width: 100%;
     background-color: #F6F6F6;
     text-align: center;
     margin-left: 0px;
@@ -69,91 +89,123 @@ main div div img{width: 400px; height: 337px;}
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-.top { top: 400px;}
-.top1{ top: 1695px;}
-
-
-.recherche2{height: 44px;font-size: 16px;background: $degrade ;color: white;border-radius: 10px;font-weight: bold;}
-.sstitre1{font-weight: bold;font-size: 30px;}
-.sstitre1{font-size: 20px;}
-.vide{height: 50px;}
-.section1{width:400px; margin: 0 auto;text-align: center; margin: 0 auto;}
-.activ{
-        display: flex;
-        flex-direction: row;
-        background-color: $blanc;
-        border-radius: 15px;
-        box-shadow: 6px 6px 10px lightgray;
+.top { top: -31px;}
+.prix{font-weight: bold;}
+.section1{
+    width:100%; 
+    margin: 0 auto;
+    text-align: center; 
+    margin: 0 auto;
+    .activ{
+      display: flex;
+      background-color: $blanc;
+      border-radius: 15px;
+      box-shadow: 6px 6px 10px lightgray;
+      height: 90px;
+      width: 94%;
+      margin: 20px auto;
+      overflow: hidden;
+      cursor: pointer;
+      .textphoto{
         height: 90px;
-        width: 94%;
-        margin: 20px auto;
-        overflow: hidden;
-        cursor: pointer;
-        &:hover{
-            .textphoto{width: 100%;}
-            .check {
-                .fa-check-circle {animation-name: spin;animation-duration: 200ms;animation-delay:800ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
-            }
-        }
-    }
-    .photo{
-    height: 60%;
-    }
-    .photo p {
-        margin: 0 1px;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 6px;
-        padding-left: 1px;
-        padding-right: 1px;
-        height: 100%;
-    }
-    .textphoto{
-        height: 40%;
         padding-left: 6%;
         text-align: start;
-        width:10000%;
-        transition-property: width ;transition-duration: 1s;
+        width:100%;
         display: flex;
+        .texte{
+          width: 90%; 
+          .depasse{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
         }
-    
-        .texte{width: 90%; text-overflow: ellipsis;}
-
-        .coeur{padding-top: 30px; width: 10%;}
-
-    .check{ background-color: green; text-align: center;color: $blanc;vertical-align: middle;width:20%;
-            ; overflow: hidden;
-            
+        .coeur{
+          padding-top: 30px; 
+          width: 10%;}
     }
-    
-    .fa-check-circle{margin-top: 1rem;
-        font-size: 36px;
-        }
-        
-    
+      
+      .check{ 
+        background-color: green; 
+        text-align: center;
+        color: $blanc;
+        vertical-align: middle;
+        width:0%;
+        overflow: hidden;
+        transition-property: width ;transition-duration: 1s;
+        .fa-check-circle{
+          margin-top: 1rem;
+          font-size: 36px;
+          }
+      } 
+      &:hover{
+          
+          .check { width: 20%;
+              .fa-check-circle {animation-name: spin;animation-duration: 200ms;animation-delay:400ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
+          }
+      }
+  }
 
-
-        
-
-    h2{
-    font-size: 16px;
-    margin: 13px 0px 5px 0px;
 }
+
+.btn{
+  height: 44px;
+  font-size: 16px;
+  background: $degrade ;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  &:hover{filter: brightness(1.5);}
+}
+.vide{height: 50px;}
+
+.textphoto1{display: flex; align-items: center;justify-content: space-around; width:100%;}
+.lemenu{width: 70%;}
+
+#Restaurant{text-align: start;}
+.titremenu{border-bottom:1px solid red;}
+
+
+
+h2{
+  font-family: "Shrikhand";
+  font-size: $policelettre2;
+  margin: 13px 0px 5px 0px;
+  text-align: start;
+  padding-left: 0%;
+}
+
+h4{ font-size: 22px; font-weight: normal;margin-top: 0px;}
 .griser1{
     color: black;
     font-size: 13px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.fa-heart-o{ color: #FF79DA ;}
+.fa-heart-o{ color: black ;font-size: $policelettre2;}
 
 .menu1{animation: disappear 1s linear; }
 .menu2{animation: disappear 2s linear;}
 .menu3{animation: disappear 3s linear; }
+.menu4{animation: disappear 4s linear; }
 
-footer{width:400px; margin-left: 0px;text-align:start;background-color: #353535;color: $blanc;position:absolute;
-     ul {list-style: none;}
+footer{
+  position: relative;
+    width: 80.3%;
+    margin: 0 auto;
+    text-align: start;
+    background-color: #353535;
+    color: white;
+    top: -31px;
+   ul {list-style: none;
+       margin-top: 0px;
+       font-size: $policelettre0;
+       .ssfooter{ font-family: 'shrikhand';
+                  margin-bottom: 10px;
+                  }
+      li{margin-top:5px;}
+      }
 }
 
-                
- 
+.fa-cutlery{margin-right: 20px;}
+.fa-hands-helping{margin-right: 8px;}

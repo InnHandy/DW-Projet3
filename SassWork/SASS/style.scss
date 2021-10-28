@@ -7,6 +7,10 @@ $degrade: linear-gradient($couleur-sec,$couleur-prim);
 $blanc: white;
 $color-fonct: #F5EDFF;
 $color-shadow: #F6F6F6;
+$policelettre24: 24px;
+$policelettre18: 18px;
+$policelettre28: 28px;
+$taillebody: 100%;
 
 /*animations keyframes*/
 @keyframes appear {
@@ -39,11 +43,9 @@ $color-shadow: #F6F6F6;
 
 /*Propriétés de la page avec chargement de la page*/
 body{
-    font-family: "Roboto", 
-    sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0 auto;
-    padding: 9px;
-    max-width: 600px;
+    max-width: 1024px;
     .load{ 
         animation: appear 5s linear;
         animation-fill-mode: forwards;
@@ -54,10 +56,9 @@ body{
             width: 250px;
             height: 250px;
             position:absolute;
-            bottom: 13rem;
-            left: 5rem;
-            animation: spin 2s linear infinite;
-             
+            bottom: 30%;
+            left: 35%;
+            animation: spin 2s linear infinite; 
           }
     }
     .after-load{
@@ -71,50 +72,56 @@ nav{
     flex-direction: column;
     align-items: center;
     .logo{
-        width: 600px; 
+        width: $taillebody; 
         text-align: center;
+        margin-top: 10px;
         img{
-            width: 308px; 
-            height: 53px;
+            width: 51%; 
             object-fit: cover;
             }
     }
     .localisation{
-            width: 600px;
+            width: $taillebody;
             background-color: #EAEAEA;
             text-align: center;
-            border-top: 2px solid #E3E3E3;
+            border-top: 5px solid #E3E3E3;
             p{
-                font-size:16px;
-                font-weight: bold;
+                font-size:$policelettre18;
+                margin-right: 40px;
                 .fa-map-marker{
                     color: black;
-                    margin-right: 7px;}
+                    margin-right: 23px;}
             }
     }
     .reserver{  
         
         background-color: $color-shadow;
-        width: 600px;
+        width: $taillebody;
         text-align: center;
         .soustitre1{
             font-weight: bold;
-            font-size: 30px;
-            width: 414px;
-            margin: 10px auto;
+            font-size: $policelettre28;
+            width: 70%;
+            margin: 37px auto;
+            margin-bottom:18px;
         }
         .soustitre2{
-            font-size: 20px;
-            width: 414px;
-            margin: 10px auto;
+            font-size: 21px;
+            width: 89%;
+            margin: 35px auto;
+            margin-top: 19px;
+            color: grey;
         }
         .btn{
-            height: 44px;
-            font-size: 16px;
+            height: 57px;
+            width: 250px;
+            font-size: $policelettre18;
             background: $degrade ;
             color: white;
-            border-radius: 10px;
-            font-weight: bold;
+            border: 0;
+            border-radius: 28px;
+            &:hover{filter: brightness(1.5)}
+            
         }
         .vide{
             height: 50px;
@@ -128,12 +135,12 @@ nav{
 /*section1*/
 
 .section1{
-    width:600px; 
+    width:$taillebody; 
     margin: 0 auto;
     text-align: center;}
     
 h3{
-    font-size: 20px;
+    font-size: $policelettre28;
     margin-top: 33px; 
     font-weight: 900;
     text-align: start;
@@ -141,21 +148,21 @@ h3{
 
 
 .fonctionnement {
-    margin: 5px auto;
-    margin-left: 10px;
-    height: 40px;
-    width: 375px;
+    margin: 4% auto;
+    margin-left: 10%;
+    height: 80px;
+    width: 85%;
     position: relative;
     border: 1px solid #F5EDFF;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 25px;
     background-color: #F5EDFF;
     box-shadow: 6px 6px 10px #f6f6f6;
 }
 
 .fonctionnement div {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     border-radius: 100%;
     background-color: $couleur-prim ;
     text-align: center;}
@@ -169,20 +176,35 @@ h3{
 }
 
 .top {
-    top: 11px;
+    top: 32px;
 }
 .left {
     left: -8px; 
 }
 .nbricon{
-    color:white;
-    font-size: 7px;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 26px;
+    margin-top: 6px;
 }
 
-.text-fonct{ 
+.text-fonct1{ 
     padding-left: 27px;
-    margin-top: -7px;
-    padding-right: 110px;
+    margin-top: 16px;
+    padding-right: 55px;
+    font-size: $policelettre18;
+}
+.text-fonct2{ 
+    padding-left: 27px;
+    margin-top: 16px;
+    padding-right: 80px;
+    font-size: $policelettre18;
+}
+.text-fonct3{ 
+    padding-left: 27px;
+    margin-top: 16px;
+    padding-right: 80px;
+    font-size: $policelettre18;
 }
 
 .fa-mobile-alt, .fa-list-ul{ 
@@ -191,14 +213,16 @@ h3{
 .fa-store{
     color : $couleur-prim;
 }
-.fa-mobile-alt, .fa-list-ul, .fa-store{
+.fa-mobile-alt{
     padding-right : 40px;
 }
+.fa-list-ul{ padding-right: 26px;}
 
+.fa-store{ padding-right: 26px;}
 /*section2*/
 
 .section2{
-    width:400px;
+    width:$taillebody;
     margin: 0 auto;
     text-align: center;
     background-color: #F6F6F6;
@@ -207,35 +231,42 @@ h3{
 h1{
     text-align: start;
     padding-left: 30px;
+    font-size: $policelettre28;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.listresto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .restaurant{
     background-color: $blanc;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 6px 6px 10px lightgray;
-    height: 200px;
-    width: 94%;
+    height: 290px;
+    width: 380px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
 }
 
 .photo{
-    height: 60%;
+    height: 76%;
     position: relative;
     p {
-        margin: 0 1px;
+        
         text-align: center;
         vertical-align: middle;
-        padding-top: 6px;
-        padding-left: 1px;
-        padding-right: 1px;
         height: 100%;
+        margin-top: 0;
     }
 }
 
 .figure{
     height: 100%;
-    width: 97%;
+    width: 100%;
     border:0px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -243,6 +274,7 @@ h1{
  }
 
  .fa-heart{
+        font-size: $policelettre24;
         background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -262,7 +294,8 @@ h1{
         display: inline;
     }
 
-.fa-heart-o{ color: black;}
+.fa-heart-o{ color: black; font-size: $policelettre24;}
+
                 
 .nonsurligne{
     text-decoration: none;
@@ -270,12 +303,12 @@ h1{
 
 .nouveau{   
     position: absolute;
-    background: lightgreen;
+    background: #99E2D0;
     width: 77px;
     height: 32px;
     margin-left: 270px;
     p{
-        color: #008000;
+        color: #0D8E6E;
     }
 }
 
@@ -294,25 +327,34 @@ h1{
 .coeur{padding-top: 30px;}
 
 h2{
-    font-size: 16px;
-    margin: 13px 0px 5px 0px;
+    font-size: $policelettre18;
+    margin: 18px 0px 5px 0px;
 }
 
 .griser1{
     color: black;
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: $policelettre18;
     margin-bottom: -12px;
+    margin-top: 0;
 }
                 
 
 footer{
-    width:600px; 
+    width:$taillebody; 
     margin: 0 auto;
     text-align:start;
     background-color: #353535;
     color: $blanc;
-     ul {list-style: none;}
+     ul {list-style: none;
+         margin-top: 0px;
+         font-size: $policelettre24;
+         .ssfooter{ font-family: 'shrikhand';
+                    margin-bottom: 10px;
+                    }
+        li{margin-top:5px;}
+        }
 }
 
+.fa-cutlery{margin-right: 20px;}
+.fa-hands-helping{margin-right: 8px;}
  

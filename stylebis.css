@@ -33,21 +33,24 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   padding: 9px;
-  max-width: 600px;
+  max-width: 1024px;
 }
 
 /*Header*/
 nav {
   position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 nav img {
-  width: 300px;
   text-align: center;
-  margin: 0 auto;
+  width: 53%;
+  height: 70px;
+  object-fit: cover;
 }
 
 .imag1 {
-  width: 400px;
+  width: 100%;
   text-align: center;
 }
 
@@ -55,29 +58,37 @@ nav img {
   font-size: 35px;
 }
 
-.menu {
+.entete {
   display: flex;
   align-items: center;
 }
 
-.imag2 {
-  width: 400px;
-  text-align: center;
+.screenshot {
+  width: 100%;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 main div div img {
-  width: 400px;
+  width: 100%;
   height: 337px;
+  object-fit: cover;
+}
+
+.imag2 {
+  width: 100%;
+  text-align: center;
 }
 
 .corps {
-  position: absolute;
-  width: 400px;
+  position: relative;
+  width: 100%;
   background-color: #F6F6F6;
   text-align: center;
   margin-left: 0px;
@@ -87,45 +98,21 @@ main div div img {
 }
 
 .top {
-  top: 400px;
+  top: -31px;
 }
 
-.top1 {
-  top: 1695px;
-}
-
-.recherche2 {
-  height: 44px;
-  font-size: 16px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border-radius: 10px;
+.prix {
   font-weight: bold;
-}
-
-.sstitre1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.sstitre1 {
-  font-size: 20px;
-}
-
-.vide {
-  height: 50px;
 }
 
 .section1 {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   margin: 0 auto;
 }
-
-.activ {
+.section1 .activ {
   display: flex;
-  flex-direction: row;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 6px 10px lightgray;
@@ -135,70 +122,99 @@ main div div img {
   overflow: hidden;
   cursor: pointer;
 }
-.activ:hover .textphoto {
+.section1 .activ .textphoto {
+  height: 90px;
+  padding-left: 6%;
+  text-align: start;
   width: 100%;
+  display: flex;
 }
-.activ:hover .check .fa-check-circle {
+.section1 .activ .textphoto .texte {
+  width: 90%;
+}
+.section1 .activ .textphoto .texte .depasse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.section1 .activ .textphoto .coeur {
+  padding-top: 30px;
+  width: 10%;
+}
+.section1 .activ .check {
+  background-color: green;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  width: 0%;
+  overflow: hidden;
+  transition-property: width;
+  transition-duration: 1s;
+}
+.section1 .activ .check .fa-check-circle {
+  margin-top: 1rem;
+  font-size: 36px;
+}
+.section1 .activ:hover .check {
+  width: 20%;
+}
+.section1 .activ:hover .check .fa-check-circle {
   animation-name: spin;
   animation-duration: 200ms;
-  animation-delay: 800ms;
+  animation-delay: 400ms;
   animation-timing-function: ease-in;
   animation-play-state: running;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
 
-.photo {
-  height: 60%;
-}
-
-.photo p {
-  margin: 0 1px;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 6px;
-  padding-left: 1px;
-  padding-right: 1px;
-  height: 100%;
-}
-
-.textphoto {
-  height: 40%;
-  padding-left: 6%;
-  text-align: start;
-  width: 10000%;
-  transition-property: width;
-  transition-duration: 1s;
-  display: flex;
-}
-
-.texte {
-  width: 90%;
-  text-overflow: ellipsis;
-}
-
-.coeur {
-  padding-top: 30px;
-  width: 10%;
-}
-
-.check {
-  background-color: green;
-  text-align: center;
+.btn {
+  height: 44px;
+  font-size: 16px;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  vertical-align: middle;
-  width: 20%;
-  overflow: hidden;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn:hover {
+  filter: brightness(1.5);
 }
 
-.fa-check-circle {
-  margin-top: 1rem;
-  font-size: 36px;
+.vide {
+  height: 50px;
+}
+
+.textphoto1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.lemenu {
+  width: 70%;
+}
+
+#Restaurant {
+  text-align: start;
+}
+
+.titremenu {
+  border-bottom: 1px solid red;
 }
 
 h2 {
-  font-size: 16px;
+  font-family: "Shrikhand";
+  font-size: 40px;
   margin: 13px 0px 5px 0px;
+  text-align: start;
+  padding-left: 0%;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0px;
 }
 
 .griser1 {
@@ -209,7 +225,8 @@ h2 {
 }
 
 .fa-heart-o {
-  color: #FF79DA;
+  color: black;
+  font-size: 40px;
 }
 
 .menu1 {
@@ -224,16 +241,38 @@ h2 {
   animation: disappear 3s linear;
 }
 
+.menu4 {
+  animation: disappear 4s linear;
+}
+
 footer {
-  width: 400px;
-  margin-left: 0px;
+  position: relative;
+  width: 80.3%;
+  margin: 0 auto;
   text-align: start;
   background-color: #353535;
   color: white;
-  position: absolute;
+  top: -31px;
 }
 footer ul {
   list-style: none;
+  margin-top: 0px;
+  font-size: 24px;
+}
+footer ul .ssfooter {
+  font-family: "shrikhand";
+  margin-bottom: 10px;
+}
+footer ul li {
+  margin-top: 5px;
+}
+
+.fa-cutlery {
+  margin-right: 20px;
+}
+
+.fa-hands-helping {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=stylebis.css.map */

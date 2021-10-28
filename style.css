@@ -32,8 +32,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  padding: 9px;
-  max-width: 600px;
+  max-width: 1024px;
 }
 body .load {
   animation: appear 5s linear;
@@ -48,8 +47,8 @@ body .load .loader {
   width: 250px;
   height: 250px;
   position: absolute;
-  bottom: 13rem;
-  left: 5rem;
+  bottom: 30%;
+  left: 35%;
   animation: spin 2s linear infinite;
 }
 body .after-load {
@@ -63,51 +62,58 @@ nav {
   align-items: center;
 }
 nav .logo {
-  width: 600px;
+  width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 nav .logo img {
-  width: 308px;
-  height: 53px;
+  width: 51%;
   object-fit: cover;
 }
 nav .localisation {
-  width: 600px;
+  width: 100%;
   background-color: #EAEAEA;
   text-align: center;
-  border-top: 2px solid #E3E3E3;
+  border-top: 5px solid #E3E3E3;
 }
 nav .localisation p {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  margin-right: 40px;
 }
 nav .localisation p .fa-map-marker {
   color: black;
-  margin-right: 7px;
+  margin-right: 23px;
 }
 nav .reserver {
   background-color: #F6F6F6;
-  width: 600px;
+  width: 100%;
   text-align: center;
 }
 nav .reserver .soustitre1 {
   font-weight: bold;
-  font-size: 30px;
-  width: 414px;
-  margin: 10px auto;
+  font-size: 28px;
+  width: 70%;
+  margin: 37px auto;
+  margin-bottom: 18px;
 }
 nav .reserver .soustitre2 {
-  font-size: 20px;
-  width: 414px;
-  margin: 10px auto;
+  font-size: 21px;
+  width: 89%;
+  margin: 35px auto;
+  margin-top: 19px;
+  color: grey;
 }
 nav .reserver .btn {
-  height: 44px;
-  font-size: 16px;
+  height: 57px;
+  width: 250px;
+  font-size: 18px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  border-radius: 10px;
-  font-weight: bold;
+  border: 0;
+  border-radius: 28px;
+}
+nav .reserver .btn:hover {
+  filter: brightness(1.5);
 }
 nav .reserver .vide {
   height: 50px;
@@ -115,13 +121,13 @@ nav .reserver .vide {
 
 /*section1*/
 .section1 {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 28px;
   margin-top: 33px;
   font-weight: 900;
   text-align: start;
@@ -129,21 +135,21 @@ h3 {
 }
 
 .fonctionnement {
-  margin: 5px auto;
-  margin-left: 10px;
-  height: 40px;
-  width: 375px;
+  margin: 4% auto;
+  margin-left: 10%;
+  height: 80px;
+  width: 85%;
   position: relative;
   border: 1px solid #F5EDFF;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 25px;
   background-color: #F5EDFF;
   box-shadow: 6px 6px 10px #f6f6f6;
 }
 
 .fonctionnement div {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 100%;
   background-color: #9356DC;
   text-align: center;
@@ -158,7 +164,7 @@ h3 {
 }
 
 .top {
-  top: 11px;
+  top: 32px;
 }
 
 .left {
@@ -167,13 +173,30 @@ h3 {
 
 .nbricon {
   color: white;
-  font-size: 7px;
+  font-size: 10px;
+  padding-bottom: 26px;
+  margin-top: 6px;
 }
 
-.text-fonct {
+.text-fonct1 {
   padding-left: 27px;
-  margin-top: -7px;
-  padding-right: 110px;
+  margin-top: 16px;
+  padding-right: 55px;
+  font-size: 18px;
+}
+
+.text-fonct2 {
+  padding-left: 27px;
+  margin-top: 16px;
+  padding-right: 80px;
+  font-size: 18px;
+}
+
+.text-fonct3 {
+  padding-left: 27px;
+  margin-top: 16px;
+  padding-right: 80px;
+  font-size: 18px;
 }
 
 .fa-mobile-alt, .fa-list-ul {
@@ -184,13 +207,21 @@ h3 {
   color: #9356DC;
 }
 
-.fa-mobile-alt, .fa-list-ul, .fa-store {
+.fa-mobile-alt {
   padding-right: 40px;
+}
+
+.fa-list-ul {
+  padding-right: 26px;
+}
+
+.fa-store {
+  padding-right: 26px;
 }
 
 /*section2*/
 .section2 {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #F6F6F6;
@@ -199,36 +230,42 @@ h3 {
 h1 {
   text-align: start;
   padding-left: 30px;
+  font-size: 28px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.listresto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .restaurant {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 6px 6px 10px lightgray;
-  height: 200px;
-  width: 94%;
+  height: 290px;
+  width: 380px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
 }
 
 .photo {
-  height: 60%;
+  height: 76%;
   position: relative;
 }
 .photo p {
-  margin: 0 1px;
   text-align: center;
   vertical-align: middle;
-  padding-top: 6px;
-  padding-left: 1px;
-  padding-right: 1px;
   height: 100%;
+  margin-top: 0;
 }
 
 .figure {
   height: 100%;
-  width: 97%;
+  width: 100%;
   border: 0px solid white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -236,6 +273,7 @@ h1 {
 }
 
 .fa-heart {
+  font-size: 24px;
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -258,6 +296,7 @@ h1 {
 
 .fa-heart-o {
   color: black;
+  font-size: 24px;
 }
 
 .nonsurligne {
@@ -267,13 +306,13 @@ h1 {
 
 .nouveau {
   position: absolute;
-  background: lightgreen;
+  background: #99E2D0;
   width: 77px;
   height: 32px;
   margin-left: 270px;
 }
 .nouveau p {
-  color: #008000;
+  color: #0D8E6E;
 }
 
 .top2 {
@@ -298,19 +337,19 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
-  margin: 13px 0px 5px 0px;
+  font-size: 18px;
+  margin: 18px 0px 5px 0px;
 }
 
 .griser1 {
   color: black;
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 18px;
   margin-bottom: -12px;
+  margin-top: 0;
 }
 
 footer {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   text-align: start;
   background-color: #353535;
@@ -318,6 +357,23 @@ footer {
 }
 footer ul {
   list-style: none;
+  margin-top: 0px;
+  font-size: 24px;
+}
+footer ul .ssfooter {
+  font-family: "shrikhand";
+  margin-bottom: 10px;
+}
+footer ul li {
+  margin-top: 5px;
+}
+
+.fa-cutlery {
+  margin-right: 20px;
+}
+
+.fa-hands-helping {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
