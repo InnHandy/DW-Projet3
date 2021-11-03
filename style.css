@@ -32,7 +32,6 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  max-width: 1024px;
 }
 body .load {
   animation: appear 5s linear;
@@ -44,11 +43,11 @@ body .load .loader {
   border-top: 16px solid #3498db;
   /* Blue */
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   position: absolute;
-  bottom: 30%;
-  left: 35%;
+  bottom: 0%;
+  left: 39%;
   animation: spin 2s linear infinite;
 }
 body .after-load {
@@ -179,24 +178,24 @@ h3 {
 }
 
 .text-fonct1 {
-  padding-left: 27px;
+  padding-left: 10%;
   margin-top: 16px;
-  padding-right: 55px;
   font-size: 18px;
+  text-align: start;
 }
 
 .text-fonct2 {
-  padding-left: 27px;
+  padding-left: 10%;
   margin-top: 16px;
-  padding-right: 80px;
   font-size: 18px;
+  text-align: start;
 }
 
 .text-fonct3 {
-  padding-left: 27px;
+  padding-left: 10%;
   margin-top: 16px;
-  padding-right: 80px;
   font-size: 18px;
+  text-align: start;
 }
 
 .fa-mobile-alt, .fa-list-ul {
@@ -208,15 +207,15 @@ h3 {
 }
 
 .fa-mobile-alt {
-  padding-right: 40px;
+  padding-right: 8%;
 }
 
 .fa-list-ul {
-  padding-right: 26px;
+  padding-right: 7%;
 }
 
 .fa-store {
-  padding-right: 26px;
+  padding-right: 7%;
 }
 
 /*section2*/
@@ -250,6 +249,10 @@ h1 {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+}
+
+.espace {
+  width: 2%;
 }
 
 .photo {
@@ -308,7 +311,8 @@ h1 {
   position: absolute;
   background: #99E2D0;
   width: 77px;
-  height: 32px;
+  padding-top: 4px;
+  height: 24px;
   margin-left: 270px;
 }
 .nouveau p {

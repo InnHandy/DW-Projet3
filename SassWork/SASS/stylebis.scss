@@ -7,10 +7,11 @@ $degrade: linear-gradient($couleur-sec,$couleur-prim);
 $blanc: white;
 $color-fonct: #F5EDFF;
 $color-shadow: #F6F6F6;
-$policelettre0: 24px;
-$policelettre1: 28px;
-$policelettre2: 40px;
-$taillebody: 80%;
+$policelettre24: 24px;
+$policelettre18: 18px;
+$policelettre28: 28px;
+$policelettre34: 34px;
+$taillebody: 100%;
 
 /*animations keyframes*/
 @keyframes appear {
@@ -45,8 +46,6 @@ $taillebody: 80%;
 body{
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
-    padding: 9px;
-    max-width: 1024px;
   }
 
 /*Header*/
@@ -56,22 +55,23 @@ nav{
   margin: 0 auto;
     img{
         text-align: center; 
-        width: 53%; 
-        height: 70px;
+        width: 45%; 
         object-fit: cover;}
 }
 .imag1{width: 100%; text-align: center;}
-.fa-arrow-left{font-size: 35px;}
+
+nav div a:visited{ color: black;}
+.fleche{margin-left: 3%;}
+.fa-arrow-left{font-size: 30px;}
 
 .entete{display: flex;align-items: center;}
 
 .screenshot{width: 100%;}
 
-
 main{display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: $taillebody;
   margin: 0 auto;}
 
 main div div img{width: 100%;
@@ -108,7 +108,7 @@ main div div img{width: 100%;
       cursor: pointer;
       .textphoto{
         height: 90px;
-        padding-left: 6%;
+        padding-left: 2%;
         text-align: start;
         width:100%;
         display: flex;
@@ -118,6 +118,7 @@ main div div img{width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            margin-bottom: 4px;
           }
         }
         .coeur{
@@ -159,17 +160,19 @@ main div div img{width: 100%;
 }
 .vide{height: 50px;}
 
-.textphoto1{display: flex; align-items: center;justify-content: space-around; width:100%;}
-.lemenu{width: 70%;}
+.textphoto1{display: flex; align-items: center;justify-content: space-around; width:100%; margin-top: 20px;}
+.lemenu{width: 75%;}
 
-#Restaurant{text-align: start;}
-.titremenu{border-bottom:1px solid red;}
+#Restaurant{text-align: start;
+  font-weight: normal;
+  margin-left: 5%;}
+.titremenu{border-bottom:4px solid #99E2D0;}
 
 
 
 h2{
   font-family: "Shrikhand";
-  font-size: $policelettre2;
+  font-size: $policelettre34;
   margin: 13px 0px 5px 0px;
   text-align: start;
   padding-left: 0%;
@@ -182,7 +185,7 @@ h4{ font-size: 22px; font-weight: normal;margin-top: 0px;}
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.fa-heart-o{ color: black ;font-size: $policelettre2;}
+.fa-heart-o{ color: black ;font-size: $policelettre34;}
 
 .menu1{animation: disappear 1s linear; }
 .menu2{animation: disappear 2s linear;}
@@ -191,7 +194,7 @@ h4{ font-size: 22px; font-weight: normal;margin-top: 0px;}
 
 footer{
   position: relative;
-    width: 80.3%;
+    width: $taillebody;
     margin: 0 auto;
     text-align: start;
     background-color: #353535;
@@ -199,7 +202,7 @@ footer{
     top: -31px;
    ul {list-style: none;
        margin-top: 0px;
-       font-size: $policelettre0;
+       font-size: $policelettre24;
        .ssfooter{ font-family: 'shrikhand';
                   margin-bottom: 10px;
                   }

@@ -32,20 +32,17 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  padding: 9px;
-  max-width: 1024px;
 }
 
 /*Header*/
 nav {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 nav img {
   text-align: center;
-  width: 53%;
-  height: 70px;
+  width: 45%;
   object-fit: cover;
 }
 
@@ -54,8 +51,16 @@ nav img {
   text-align: center;
 }
 
+nav div a:visited {
+  color: black;
+}
+
+.fleche {
+  margin-left: 3%;
+}
+
 .fa-arrow-left {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .entete {
@@ -71,7 +76,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -124,7 +129,7 @@ main div div img {
 }
 .section1 .activ .textphoto {
   height: 90px;
-  padding-left: 6%;
+  padding-left: 2%;
   text-align: start;
   width: 100%;
   display: flex;
@@ -136,6 +141,7 @@ main div div img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 4px;
 }
 .section1 .activ .textphoto .coeur {
   padding-top: 30px;
@@ -189,23 +195,26 @@ main div div img {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  margin-top: 20px;
 }
 
 .lemenu {
-  width: 70%;
+  width: 75%;
 }
 
 #Restaurant {
   text-align: start;
+  font-weight: normal;
+  margin-left: 5%;
 }
 
 .titremenu {
-  border-bottom: 1px solid red;
+  border-bottom: 4px solid #99E2D0;
 }
 
 h2 {
   font-family: "Shrikhand";
-  font-size: 40px;
+  font-size: 34px;
   margin: 13px 0px 5px 0px;
   text-align: start;
   padding-left: 0%;
@@ -226,7 +235,7 @@ h4 {
 
 .fa-heart-o {
   color: black;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .menu1 {
@@ -247,7 +256,7 @@ h4 {
 
 footer {
   position: relative;
-  width: 80.3%;
+  width: 100%;
   margin: 0 auto;
   text-align: start;
   background-color: #353535;
