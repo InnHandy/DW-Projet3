@@ -10,6 +10,8 @@ $color-shadow: #F6F6F6;
 $policelettre24: 24px;
 $policelettre18: 18px;
 $policelettre28: 28px;
+$policelettre34: 34px;
+$policelettre40: 40px;
 $taillebody: 100%;
 
 /*animations keyframes*/
@@ -75,7 +77,7 @@ nav{
         text-align: center;
         margin-top: 10px;
         img{
-            width: 51%; 
+            width: 45%; 
             object-fit: cover;
             }
     }
@@ -85,8 +87,9 @@ nav{
             text-align: center;
             border-top: 5px solid #E3E3E3;
             p{
-                font-size:$policelettre18;
+                font-size:$policelettre24;
                 margin-right: 40px;
+                font-weight: bold;
                 .fa-map-marker{
                     color: black;
                     margin-right: 23px;}
@@ -99,22 +102,22 @@ nav{
         text-align: center;
         .soustitre1{
             font-weight: bold;
-            font-size: $policelettre28;
+            font-size: $policelettre40;
             width: 70%;
             margin: 37px auto;
             margin-bottom:18px;
         }
         .soustitre2{
-            font-size: 21px;
+            font-size: 28px;
             width: 89%;
             margin: 35px auto;
             margin-top: 19px;
             color: grey;
         }
         .btn{
-            height: 57px;
-            width: 250px;
-            font-size: $policelettre18;
+            height: 66px;
+            width: 320px;
+            font-size: $policelettre24;
             background: $degrade ;
             color: white;
             border: 0;
@@ -139,8 +142,8 @@ nav{
     text-align: center;}
     
 h3{
-    font-size: $policelettre28;
-    margin-top: 33px; 
+    font-size: $policelettre34;
+    margin-top: 70px; 
     font-weight: 900;
     text-align: start;
     margin-left: 36px;}
@@ -190,19 +193,19 @@ h3{
 .text-fonct1{ 
     padding-left: 10%;
     margin-top: 16px;
-    font-size: $policelettre18;
+    font-size: $policelettre24;
     text-align: start;
 }
 .text-fonct2{ 
     padding-left: 10%;
     margin-top: 16px;
-    font-size: $policelettre18;
+    font-size: $policelettre24;
     text-align:start;
 }
 .text-fonct3{ 
     padding-left: 10%;
     margin-top: 16px;
-    font-size: $policelettre18;
+    font-size: $policelettre24;
     text-align: start;
 }
 
@@ -234,7 +237,7 @@ h3{
 h1{
     text-align: start;
     padding-left: 30px;
-    font-size: $policelettre28;
+    font-size: $policelettre34;
     margin-top: 50px;
     padding-top: 50px;
 }
@@ -248,7 +251,7 @@ h1{
     background-color: $blanc;
     border-radius: 30px;
     box-shadow: 6px 6px 10px lightgray;
-    height: 290px;
+    height: 372px;
     width: 380px;
     margin: 20px auto;
     display: flex;
@@ -279,7 +282,8 @@ h1{
  }
 
  .fa-heart{
-        font-size: $policelettre24;
+        font-size: $policelettre34;
+        margin-right: 24px;
         background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -299,7 +303,7 @@ h1{
         display: inline;
     }
 
-.fa-heart-o{ color: black; font-size: $policelettre24;}
+.fa-heart-o{ color: black; font-size: $policelettre34;margin-right: 24px;}
 
                 
 .nonsurligne{
@@ -333,34 +337,38 @@ h1{
 .coeur{padding-top: 30px;}
 
 h2{
-    font-size: $policelettre18;
+    font-size: $policelettre28;
     margin: 18px 0px 5px 0px;
 }
 
 .griser1{
     color: black;
-    font-size: $policelettre18;
+    font-size: $policelettre24;
     margin-bottom: -12px;
     margin-top: 0;
 }
                 
 
 footer{
-    width:$taillebody; 
+    width: $taillebody;
     margin: 0 auto;
-    text-align:start;
+    text-align: start;
     background-color: #353535;
-    color: $blanc;
-     ul {list-style: none;
-         margin-top: 0px;
-         font-size: $policelettre24;
-         .ssfooter{ font-family: 'shrikhand';
-                    margin-bottom: 10px;
-                    }
-        li{margin-top:5px;}
-        }
+    color: white;
+   ul {list-style: none;
+       margin-top: 0px;
+       font-size: $policelettre24;
+       padding-bottom: 40px;
+       .ssfooter{ font-family: "shrikhand";
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-top: 20px;
+                  }
+      li{margin-top:12px;}
+      }
 }
 
+.footertext1{font-size: 22px;}
 .fa-cutlery{margin-right: 20px;}
 .fa-hands-helping{margin-right: 8px;}
  

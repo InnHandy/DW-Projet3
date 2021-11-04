@@ -66,7 +66,7 @@ nav .logo {
   margin-top: 10px;
 }
 nav .logo img {
-  width: 51%;
+  width: 45%;
   object-fit: cover;
 }
 nav .localisation {
@@ -76,8 +76,9 @@ nav .localisation {
   border-top: 5px solid #E3E3E3;
 }
 nav .localisation p {
-  font-size: 18px;
+  font-size: 24px;
   margin-right: 40px;
+  font-weight: bold;
 }
 nav .localisation p .fa-map-marker {
   color: black;
@@ -90,22 +91,22 @@ nav .reserver {
 }
 nav .reserver .soustitre1 {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 40px;
   width: 70%;
   margin: 37px auto;
   margin-bottom: 18px;
 }
 nav .reserver .soustitre2 {
-  font-size: 21px;
+  font-size: 28px;
   width: 89%;
   margin: 35px auto;
   margin-top: 19px;
   color: grey;
 }
 nav .reserver .btn {
-  height: 57px;
-  width: 250px;
-  font-size: 18px;
+  height: 66px;
+  width: 320px;
+  font-size: 24px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: 0;
@@ -126,8 +127,8 @@ nav .reserver .vide {
 }
 
 h3 {
-  font-size: 28px;
-  margin-top: 33px;
+  font-size: 34px;
+  margin-top: 70px;
   font-weight: 900;
   text-align: start;
   margin-left: 36px;
@@ -180,21 +181,21 @@ h3 {
 .text-fonct1 {
   padding-left: 10%;
   margin-top: 16px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: start;
 }
 
 .text-fonct2 {
   padding-left: 10%;
   margin-top: 16px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: start;
 }
 
 .text-fonct3 {
   padding-left: 10%;
   margin-top: 16px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: start;
 }
 
@@ -229,7 +230,7 @@ h3 {
 h1 {
   text-align: start;
   padding-left: 30px;
-  font-size: 28px;
+  font-size: 34px;
   margin-top: 50px;
   padding-top: 50px;
 }
@@ -244,7 +245,7 @@ h1 {
   background-color: white;
   border-radius: 30px;
   box-shadow: 6px 6px 10px lightgray;
-  height: 290px;
+  height: 372px;
   width: 380px;
   margin: 20px auto;
   display: flex;
@@ -276,7 +277,8 @@ h1 {
 }
 
 .fa-heart {
-  font-size: 24px;
+  font-size: 34px;
+  margin-right: 24px;
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -299,7 +301,8 @@ h1 {
 
 .fa-heart-o {
   color: black;
-  font-size: 24px;
+  font-size: 34px;
+  margin-right: 24px;
 }
 
 .nonsurligne {
@@ -341,13 +344,13 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 28px;
   margin: 18px 0px 5px 0px;
 }
 
 .griser1 {
   color: black;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: -12px;
   margin-top: 0;
 }
@@ -363,13 +366,20 @@ footer ul {
   list-style: none;
   margin-top: 0px;
   font-size: 24px;
+  padding-bottom: 40px;
 }
 footer ul .ssfooter {
   font-family: "shrikhand";
   margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 footer ul li {
-  margin-top: 5px;
+  margin-top: 12px;
+}
+
+.footertext1 {
+  font-size: 22px;
 }
 
 .fa-cutlery {

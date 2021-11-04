@@ -90,7 +90,8 @@ main div div img{width: 100%;
     border-top-right-radius: 25px;
 }
 .top { top: -31px;}
-.prix{font-weight: bold;}
+.prix{font-weight: bold;margin-top: 22px;
+      font-size: 22px;}
 .section1{
     width:100%; 
     margin: 0 auto;
@@ -119,6 +120,7 @@ main div div img{width: 100%;
             text-overflow: ellipsis;
             white-space: nowrap;
             margin-bottom: 4px;
+            
           }
         }
         .coeur{
@@ -142,7 +144,7 @@ main div div img{width: 100%;
       &:hover{
           
           .check { width: 20%;
-              .fa-check-circle {animation-name: spin;animation-duration: 200ms;animation-delay:400ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
+              .fa-check-circle {animation-name: spin;animation-duration: 100ms;animation-delay:300ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
           }
       }
   }
@@ -150,13 +152,15 @@ main div div img{width: 100%;
 }
 
 .btn{
-  height: 44px;
-  font-size: 16px;
-  background: $degrade ;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  &:hover{filter: brightness(1.5);}
+  height: 57px;
+            width: 250px;
+            font-size: $policelettre18;
+            background: $degrade ;
+            color: white;
+            border: 0;
+            border-radius: 28px;
+            &:hover{filter: brightness(1.5)}
+            margin: 50px auto;
 }
 .vide{height: 50px;}
 
@@ -177,8 +181,8 @@ h2{
   text-align: start;
   padding-left: 0%;
 }
-
-h4{ font-size: 22px; font-weight: normal;margin-top: 0px;}
+h3{font-size: $policelettre24;}
+h4{ font-size: 20px; font-weight: normal;margin-top: 0px;}
 .griser1{
     color: black;
     font-size: 13px;
@@ -203,12 +207,17 @@ footer{
    ul {list-style: none;
        margin-top: 0px;
        font-size: $policelettre24;
-       .ssfooter{ font-family: 'shrikhand';
-                  margin-bottom: 10px;
+       padding-bottom: 40px;
+       .ssfooter{ font-family: "shrikhand";
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-top: 20px;
                   }
-      li{margin-top:5px;}
+      li{margin-top:12px;}
       }
 }
+
+.footertext1{font-size: 22px;}
 
 .fa-cutlery{margin-right: 20px;}
 .fa-hands-helping{margin-right: 8px;}
