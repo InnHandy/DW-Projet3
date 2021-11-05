@@ -108,8 +108,8 @@ main div div img {
 
 .prix {
   font-weight: bold;
-  margin-top: 22px;
-  font-size: 22px;
+  margin-top: 27px;
+  font-size: 16px;
 }
 
 .section1 {
@@ -160,7 +160,7 @@ main div div img {
   transition-duration: 1s;
 }
 .section1 .activ .check .fa-check-circle {
-  margin-top: 1rem;
+  margin-top: 26px;
   font-size: 36px;
 }
 .section1 .activ:hover .check {
@@ -203,7 +203,7 @@ main div div img {
 }
 
 .lemenu {
-  width: 75%;
+  width: 78%;
 }
 
 #Restaurant {
@@ -225,11 +225,12 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   margin-top: 0px;
 }

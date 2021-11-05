@@ -90,8 +90,8 @@ main div div img{width: 100%;
     border-top-right-radius: 25px;
 }
 .top { top: -31px;}
-.prix{font-weight: bold;margin-top: 22px;
-      font-size: 22px;}
+.prix{font-weight: bold;margin-top: 27px;
+      font-size: 16px;}
 .section1{
     width:100%; 
     margin: 0 auto;
@@ -137,7 +137,7 @@ main div div img{width: 100%;
         overflow: hidden;
         transition-property: width ;transition-duration: 1s;
         .fa-check-circle{
-          margin-top: 1rem;
+          margin-top: 26px;
           font-size: 36px;
           }
       } 
@@ -165,7 +165,7 @@ main div div img{width: 100%;
 .vide{height: 50px;}
 
 .textphoto1{display: flex; align-items: center;justify-content: space-around; width:100%; margin-top: 20px;}
-.lemenu{width: 75%;}
+.lemenu{width: 78%;}
 
 #Restaurant{text-align: start;
   font-weight: normal;
@@ -181,8 +181,8 @@ h2{
   text-align: start;
   padding-left: 0%;
 }
-h3{font-size: $policelettre24;}
-h4{ font-size: 20px; font-weight: normal;margin-top: 0px;}
+h3{font-size: 20px; margin-top: 30px;}
+h4{ font-size: 16px; font-weight: normal;margin-top: 0px;}
 .griser1{
     color: black;
     font-size: 13px;
