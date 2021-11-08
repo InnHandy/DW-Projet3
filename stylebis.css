@@ -137,7 +137,7 @@ main div div img {
   display: flex;
 }
 .section1 .activ .textphoto .texte {
-  width: 90%;
+  width: 82%;
 }
 .section1 .activ .textphoto .texte .depasse {
   overflow: hidden;
@@ -146,11 +146,13 @@ main div div img {
   margin-bottom: 4px;
 }
 .section1 .activ .textphoto .coeur {
-  padding-top: 30px;
-  width: 10%;
+  padding-top: 27px;
+  width: 11%;
+  text-align: end;
+  padding-right: 0px;
 }
 .section1 .activ .check {
-  background-color: green;
+  background-color: #99E2D0;
   text-align: center;
   color: white;
   vertical-align: middle;
@@ -168,8 +170,8 @@ main div div img {
 }
 .section1 .activ:hover .check .fa-check-circle {
   animation-name: spin;
-  animation-duration: 100ms;
-  animation-delay: 300ms;
+  animation-duration: 300ms;
+  animation-delay: 100ms;
   animation-timing-function: ease-in;
   animation-play-state: running;
   animation-iteration-count: 1;
@@ -225,14 +227,15 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 30px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   margin-top: 0px;
+  word-spacing: -1px;
 }
 
 .griser1 {

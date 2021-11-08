@@ -114,7 +114,7 @@ main div div img{width: 100%;
         width:100%;
         display: flex;
         .texte{
-          width: 90%; 
+          width: 82%; 
           .depasse{
             overflow: hidden;
             text-overflow: ellipsis;
@@ -124,12 +124,14 @@ main div div img{width: 100%;
           }
         }
         .coeur{
-          padding-top: 30px; 
-          width: 10%;}
+          padding-top: 27px; 
+          width: 11%;
+        text-align: end;
+      padding-right: 0px;}
     }
       
       .check{ 
-        background-color: green; 
+        background-color: #99E2D0; 
         text-align: center;
         color: $blanc;
         vertical-align: middle;
@@ -144,7 +146,7 @@ main div div img{width: 100%;
       &:hover{
           
           .check { width: 20%;
-              .fa-check-circle {animation-name: spin;animation-duration: 100ms;animation-delay:300ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
+              .fa-check-circle {animation-name: spin;animation-duration: 300ms;animation-delay:100ms;animation-timing-function:ease-in; animation-play-state:running;animation-iteration-count: 1;animation-fill-mode: backwards;};
           }
       }
   }
@@ -181,8 +183,8 @@ h2{
   text-align: start;
   padding-left: 0%;
 }
-h3{font-size: 20px; margin-top: 30px;}
-h4{ font-size: 16px; font-weight: normal;margin-top: 0px;}
+h3{font-size: 18px; margin-top: 30px;}
+h4{ font-size: 15px; font-weight: normal;margin-top: 0px; word-spacing: -1px;}
 .griser1{
     color: black;
     font-size: 13px;
